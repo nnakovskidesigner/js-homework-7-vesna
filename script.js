@@ -19,19 +19,16 @@ var imageSources = [
   "https://i.ibb.co/YBMX07y/1.jpg",
   "https://i.ibb.co/gdstxWz/2.jpg",
   "https://i.ibb.co/FqVP1Ck/3.jpg",
-  "https://i.ibb.co/mJrw27F/4.jpg"
+  "https://i.ibb.co/mJrw27F/4.jpg" //note,reminder to self: the images are uploaded online, when using this page for a portfolio, check if they are still availbale on the web, because they wont display
 ]
 
-for (var i = 0; i <imageSources.length; i++){
-  const li = document.createElement("li");
+for (var i = 0; i < imageSources.length; i++){
+  var li = document.createElement("li");
   li.textContent = text[i];
 
   li.style.display = "inline-block";
-  li.style.textAlign = "center";
   li.style.margin = "10px";
   li.style.fontSize = "40px";
-  li.style.fontWeight = "bold";
-
   li.style.color = "white";
   li.style.borderRadius = "50px";
 
@@ -46,8 +43,7 @@ for (var i = 0; i <imageSources.length; i++){
 
   img.addEventListener('mouseover', function() {
     img.style.border = 'solid 5px #FFFFFF';
-    img.style.boxShadow = '0 0 10px 0px red';
-
+    img.style.boxShadow = '0 0 20px 0px red';
   });
   
   img.addEventListener('mouseout', function() {
