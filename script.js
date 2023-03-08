@@ -54,4 +54,5 @@ for (let i = 0; i <imageSources.length; i++){
     img.style.border = '';
     img.style.boxShadow = '';
   });
+  console.log('test')
 }
