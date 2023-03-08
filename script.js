@@ -1,28 +1,28 @@
-const heading = document.querySelector('h1');
+var heading = document.querySelector('h1');
 heading.style.paddingTop = '50px';
 heading.style.paddingLeft = '90px';
 heading.style.fontSize = '55px';
 heading.style.color = 'white';
 
-document.getElementById('awesome-bikes').style.paddingLeft = "60px";
+document.getElementById('awesome-bikes').style.paddingLeft = "60px"; //ullist 
 
-const myList = document.getElementById('awesome-bikes');
+var myList = document.getElementById('awesome-bikes');
 
-const imageSources = [
+var text = [
+  "Polar",
+  "Giant",
+  "Trek",
+  "CannonDale"
+] 
+
+var imageSources = [
   "https://i.ibb.co/YBMX07y/1.jpg",
   "https://i.ibb.co/gdstxWz/2.jpg",
   "https://i.ibb.co/FqVP1Ck/3.jpg",
   "https://i.ibb.co/mJrw27F/4.jpg"
 ]
 
-const text = [
-  "Polar",
-  "Giant",
-  "Trek",
-  "CannonDale"
-]
-
-for (let i = 0; i <imageSources.length; i++){
+for (var i = 0; i <imageSources.length; i++){
   const li = document.createElement("li");
   li.textContent = text[i];
 
