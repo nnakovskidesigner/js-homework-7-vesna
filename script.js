@@ -1,9 +1,8 @@
-document.getElementById('myHeading').style.color = 'white';
-
 const heading = document.querySelector('h1');
 heading.style.paddingTop = '50px';
 heading.style.paddingLeft = '90px';
 heading.style.fontSize = '55px';
+heading.style.color = 'white';
 
 document.getElementById('awesome-bikes').style.paddingLeft = "60px";
 
@@ -47,7 +46,8 @@ for (let i = 0; i <imageSources.length; i++){
 
   img.addEventListener('mouseover', function() {
     img.style.border = 'solid 5px #FFFFFF';
-    img.style.boxShadow = '100px #FFFF';
+    img.style.boxShadow = '0 0 10px 0px red';
+
   });
   
   img.addEventListener('mouseout', function() {
